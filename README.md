@@ -58,7 +58,7 @@ A very common scenario is that the dataset contains missing values coded as NaN.
 In this project, I present several useful ways to handle these discrepancies in the dataset.
 
 
-
+=================================================================================
 
 
 ## 2. Tidy data format
@@ -77,7 +77,7 @@ Tidy data makes it easier to fix common data problems. So, we need to transform 
 Before we look into the details of cleaning the dataset, we have to understand what constitutes an untidy data. We need to diagnose our data and find common signs of a messy dataset.
 
 
-
+=================================================================================
 
 
 ## 3. Signs of an untidy dataset
@@ -105,6 +105,11 @@ Outliers need to be detected. They pose potential problems needs to be investiga
 •	**Duplicate rows and columns**
 Duplicate rows and columns make data redundant. They can bias an analysis. Hence, they needs to be found and dropped.
 
+
+
+=================================================================================
+
+
 ## 4. Python data cleaning - prerequisites
 We need two Python libraries for the data cleansing process – NumPy and Pandas.
 
@@ -113,6 +118,10 @@ We need two Python libraries for the data cleansing process – NumPy and Pandas
 •	**Pandas** - Pandas is a software library for Python programming language which provide tools for data manipulation and analysis tasks. It will enable us to manipulate numerical tables and time series using data structures and operations.
 
 •	**Matplotlib** - Matplotlib is the core data visualization library of Python programming language. It provides an object-oriented API for embedding plots into applications.
+
+
+
+=================================================================================
 
 
 ## 5. Import the required Python libraries
@@ -124,9 +133,13 @@ We have seen that we need two Python libraries – NumPy and Python for the data
 `%matplotlib inline`
 
 
+=================================================================================
 
 ## 6. The source dataset
 For this project, I have created a fictitious dataset. The dataset consists of details of my facebook friends.
+
+
+=================================================================================
 
 ## 7. Exploratory data analysis
 Now, it is time to understand the data. We should diagnose the data for any discrepancies by doing exploratory data analysis. We should proceed as follows:-
@@ -150,6 +163,11 @@ We can view the summary statistics of numerical columns with **df.describe()** m
 ### df.columns attribute
 We can get the column labels of the dataframe with **df.columns** attribute.
 
+
+
+=================================================================================
+
+
 ## 8. Visual exploratory data analysis
 Now, we should conduct data visualization to find discrepancies in the data. Data visualization is a great way to find errors in the data and detect outliers. They help us to detect patterns in the data.
 We can use various types of plots for data visualization purpose. These plots are listed below:-
@@ -170,6 +188,10 @@ We can visualize basic summary statistics with box plot. Box plot let us to dete
 Scatter plot help us to explore relationship between two numeric variables. It help us to identify potentially bad data.
 We should draw a scatter plot of height(cm) and weight(kg) column.
 
+
+=================================================================================
+
+
 ## 9. Findings of EDA and Visual EDA
 We can summarize the findings of EDA and visual EDA as follows:-
 1.	The dataset has 10 rows and 10 columns.
@@ -181,6 +203,9 @@ We can summarize the findings of EDA and visual EDA as follows:-
 7.	The three columns spend_A, spend_B and spend_C denote spending at three supermarkets A,B and C. These columns must contain positive real numbers. The missing values in these columns denote nothing spend in that market. We need to handle these missing values properly.
 8.	In the spend_B column, there is a negative value -100. The amount spent cannot be negative. So, we need to take care of that.
 
+
+
+=================================================================================
 
 
 ## 10. Split the ‘age_sex’ column
@@ -198,10 +223,18 @@ We can drop 'age_sex' column using the **df.drop()** method as follows:-
 `df.drop(['age_sex'], axis=1)`
 
 
+=================================================================================
+
+
+
 ## 11. Reorder the column labels
 We should reorder the columns for more pleasing visual appearance.
 We can do it as follows:-
 `df = df[['fname','lname','age','sex','section','height(cm)','weight(kg)','spend_A','spend_B','spend_C']]`
+
+
+=================================================================================
+
 
 
 ## 12. Dealing with negative numerical values
@@ -212,6 +245,10 @@ We can do it as follows:-
 Similarly, in the spend_B column, there is a negative value -100. The amount spent cannot be negative. So, we need to replace this negative value of -100 with positive value of 100.
 We can do it as follows:-
 `df['spend_B'].replace(-100,100, inplace=True)`
+
+
+=================================================================================
+
 
 
 ## 13. Dealing with outliers
@@ -226,6 +263,10 @@ In the weight(kg) column, there is a very high absurd value of 160. It is not po
 It can be done as follows:-
 
 `df['weight(kg)'].replace(160.0, 60.0, inplace=True)`
+
+
+=================================================================================
+
 
 ## 14. Dealing with missing numerical values
 The following commands help us to deal with missing numerical values.
@@ -331,6 +372,9 @@ If we choose this method, then we should compute the mean value on the training 
 
 
 
+=================================================================================
+
+
 ## 15. Check with ASSERT statement
 
 Finally, we can check for missing values programmatically. If we drop or fill missing values, we expect no missing values. We can write an assert statement to verify this. So, we can use an assert statement to programmatically check that no missing or unexpected ‘0’ value is present. This gives confidence that our code is running properly.
@@ -355,6 +399,9 @@ Asserts
 `assert (df['column_name']!=0).all().all()`
 
 
+=================================================================================
+
+
 ## 16. Reshaping the data into tidy data format
 
 When we take a closer look at the dataframe, we can see that our dataframe is not in the tidy data format.
@@ -366,6 +413,10 @@ value_vars=['spend_A','spend_B','spend_C'], var_name='expenditure',
 value_name='amount')`
 
 
+=================================================================================
+
+
+
 ## 17. Summary
 
 In this project, I present useful techniques to clean a messy dataset with Python and Pandas.
@@ -373,7 +424,10 @@ I start with the data cleaning process and emphasize the importance of a clean d
 Then, I diagnose the dataset with exploratory data analysis (EDA) and visual exploratory data analysis (Visual EDA). I summarize my findings of EDA and Visual EDA.
 Then, I start the data cleaning process. First of all, I split the ‘age_sex’ column into two separate columns. Then, I reorder the column labels.
 Then, I discuss several ways to deal with negative numerical values, outliers and missing numerical values. Then, I programmatically check with ASSERT statement that there are no missing or negative values in the dataset.
-In the last step, I reshape the data into tidy data format using pd.melt() function.
+In the last step, I reshape the data into tidy data format using 'pd.melt()' function.
+
+
+=================================================================================
 
 ## 18. References
 
