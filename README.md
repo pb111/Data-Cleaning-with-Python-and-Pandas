@@ -156,7 +156,7 @@ Duplicate rows and columns make data redundant. They can bias an analysis. Hence
 ## 4. Python data cleaning - prerequisites
 
 
-We need two Python libraries for the data cleansing process – NumPy and Pandas.
+We need three Python libraries for the data cleaning process – NumPy, Pandas and Matplotlib.
 
 
 
@@ -176,7 +176,7 @@ We need two Python libraries for the data cleansing process – NumPy and Pandas
 ## 5. Import the required Python libraries
 
 
-We have seen that we need two Python libraries – NumPy and Python for the data cleansing process. We need to import these libraries before we actually start using them. We can import them with their usual shorthand notation as follows:-
+We have seen that we need three Python libraries – NumPy, Pandas and Matplotlib for the data cleansing process. We need to import these libraries before we actually start using them. We can import them with their usual shorthand notation as follows:-
 
 
 `import numpy as np`
