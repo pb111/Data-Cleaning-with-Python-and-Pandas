@@ -81,7 +81,7 @@ in 2014 that formalizes the shape of the data. So, it gives us a goal when forma
 He states in his paper that –
 
 
-“Tidy data provides a standard way to organize data values within a dataset.”
+`Tidy data provides a standard way to organize data values within a dataset.`
 
 
 There are three principles of tidy data. These are as follows:-
