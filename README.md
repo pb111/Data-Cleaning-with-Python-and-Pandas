@@ -87,13 +87,13 @@ He states in his paper that –
 There are three principles of tidy data. These are as follows:-
 
 
-**•	Columns represent separate variables**
+•	**Columns represent separate variables**
 
 
-**•	Rows represent individual observations**
+•	**Rows represent individual observations**
 
 
-**•	Observational units form tables.**
+•	**Observational units form tables.**
 
 
 Tidy data makes it easier to fix common data problems. So, we need to transform the untidy dataset into tidy data. 
@@ -204,33 +204,33 @@ Now, it is time to understand the data. We should diagnose the data for any disc
 We should proceed as follows:-
 
 
-**df.shape attribute**
+•	**df.shape attribute**
 
 We can check the dimensions of the data with **df.shape** attribute.
 
 
-**df.head()** and **df.tail()** methods
+•	**df.head()** and **df.tail()** methods
 
 We can view the top five and bottom five rows of the dataset with **df.head()** and **df.tail()** methods respectively.
 
 
-**df.info()** method
+•	**df.info()** method
 
 We can get a concise summary of the dataset with **df.info()** method. This method prints information about a DataFrame including the index dtype and column dtypes, non-null values and memory usage.
 
 
-**df.dtypes** attribute
+•	**df.dtypes** attribute
 
 We can check the data types of each column in the dataframe with **df.dtypes** attribute. The above command returns the data type of each column.
 
 
-**df.describe()** method
+•	**df.describe()** method
 
 We can view the summary statistics of numerical columns with **df.describe()** method. It enable us to detect outliers in the data 
 which require further investigation.
 
 
-**df.columns** attribute
+•	**df.columns** attribute
 
 We can get the column labels of the dataframe with **df.columns** attribute.
 
