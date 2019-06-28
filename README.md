@@ -47,7 +47,7 @@ This project is divided into various sections which are listed below:-
 
 
 
-=================================================================================
+================================================================================
 
 
 
@@ -69,7 +69,7 @@ A very common scenario is that the dataset contains missing values coded as `NaN
 In this project, I present several useful ways to handle these discrepancies in the dataset.
 
 
-=================================================================================
+================================================================================
 
 
 ## 2. Tidy data format
@@ -104,7 +104,7 @@ Before we look into the details of cleaning the dataset, we have to understand w
 our data and find common signs of a messy dataset.
 
 
-=================================================================================
+================================================================================
 
 
 ## 3. Signs of an untidy dataset
@@ -150,7 +150,7 @@ Duplicate rows and columns make data redundant. They can bias an analysis. Hence
 
 
 
-=================================================================================
+================================================================================
 
 
 ## 4. Python data cleaning - prerequisites
@@ -170,7 +170,7 @@ We need three Python libraries for the data cleaning process – NumPy, Pandas a
 
 
 
-=================================================================================
+================================================================================
 
 
 ## 5. Import the required Python libraries
@@ -188,7 +188,7 @@ We have seen that we need three Python libraries – NumPy, Pandas and Matplotli
 `%matplotlib inline`
 
 
-=================================================================================
+================================================================================
 
 ## 6. The source dataset
 
@@ -196,7 +196,7 @@ We have seen that we need three Python libraries – NumPy, Pandas and Matplotli
 For this project, I have created a fictitious dataset. The dataset consists of details of my facebook friends.
 
 
-=================================================================================
+================================================================================
 
 ## 7. Exploratory data analysis
 
@@ -237,7 +237,7 @@ We can get the column labels of the dataframe with **df.columns** attribute.
 
 
 
-=================================================================================
+================================================================================
 
 
 ## 8. Visual exploratory data analysis
@@ -272,7 +272,7 @@ Scatter plot help us to explore relationship between two numeric variables. It h
 We should draw a scatter plot of height(cm) and weight(kg) column.
 
 
-=================================================================================
+================================================================================
 
 
 ## 9. Findings of EDA and Visual EDA
@@ -301,7 +301,7 @@ We can summarize the findings of EDA and visual EDA as follows:-
 
 
 
-=================================================================================
+================================================================================
 
 
 ## 10. Split the ‘age_sex’ column
@@ -321,7 +321,7 @@ We can drop 'age_sex' column using the **df.drop()** method as follows:-
 `df.drop(['age_sex'], axis=1)`
 
 
-=================================================================================
+================================================================================
 
 
 ## 11. Reorder the column labels
@@ -335,7 +335,7 @@ We can do it as follows:-
 `df = df[['fname','lname','age','sex','section','height(cm)','weight(kg)','spend_A','spend_B','spend_C']]`
 
 
-=================================================================================
+================================================================================
 
 
 
@@ -360,7 +360,7 @@ We can do it as follows:-
 `df['spend_B'].replace(-100,100, inplace=True)`
 
 
-=================================================================================
+================================================================================
 
 
 
@@ -387,7 +387,7 @@ It can be done as follows:-
 `df['weight(kg)'].replace(160.0, 60.0, inplace=True)`
 
 
-=================================================================================
+================================================================================
 
 
 ## 14. Dealing with missing numerical values
@@ -542,7 +542,7 @@ the mean value to evaluate the system.
 
 
 
-=================================================================================
+================================================================================
 
 
 ## 15. Check with ASSERT statement
@@ -589,7 +589,7 @@ Asserts
 `assert (df['column_name']!=0).all().all()`
 
 
-=================================================================================
+================================================================================
 
 
 ## 16. Reshaping the data into tidy data format
@@ -610,7 +610,7 @@ We can convert it into the tidy data format using the **pd.melt()** function as 
 			`value_name='amount')`
 
 
-=================================================================================
+================================================================================
 
 
 
@@ -637,7 +637,7 @@ In the last step, I reshape the data into tidy data format using 'pd.melt()' fun
 
 
 
-=================================================================================
+================================================================================
 
 
 ## 18. References
