@@ -3,7 +3,7 @@
 In this project, I discuss various useful techniques to clean a messy dataset with Python and Pandas.
 
 
-
+===============================================================================
 
 
 ## Table of Contents:-
@@ -48,10 +48,7 @@ This project is divided into various sections which are listed below:-
 18.	References
 
 
-
 ===============================================================================
-
-
 
 ## 1. Introduction to Python data cleaning
 
