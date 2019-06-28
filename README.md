@@ -1,6 +1,6 @@
 # Data Cleaning with Python and Pandas
 
-In this project, I discuss useful techniques to clean a messy dataset with Python and Pandas.
+In this project, I discuss useful techniques to clean a messy dataset with Python and Pandas. I discuss `principles of tidy data` and `signs of an untidy data`. I discuss EDA and present ways to deal with `outliers` and `missing and negative numerical values`. I discuss how to check for missing values with `ASSERT` statement. I present how to reshape data using the Pandas `melt()` function.
 
 
 ===============================================================================
