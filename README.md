@@ -69,7 +69,7 @@ A very common scenario is that the dataset contains missing values coded as `NaN
 In this project, I present several useful ways to handle these discrepancies in the dataset.
 
 
-================================================================================
+===============================================================================
 
 
 ## 2. Tidy data format
@@ -104,7 +104,7 @@ Before we look into the details of cleaning the dataset, we have to understand w
 our data and find common signs of a messy dataset.
 
 
-================================================================================
+===============================================================================
 
 
 ## 3. Signs of an untidy dataset
